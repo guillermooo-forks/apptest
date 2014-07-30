@@ -1,5 +1,5 @@
 install:
-  - ps: "installing scoop"
+  - ps: write-host "installing scoop"
   - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
   - ps: scoop install "7zip"
   - ps: write-host "installing sublime text 3"
