@@ -1,7 +1,6 @@
 install:
-  - ps: write-host "installing scoop"
-  - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-  - ps: scoop install "7zip"
+  - cinst: "7zip"
+  - ps: get-command "7z.*"
   - ps: write-host "installing sublime text 3"
   - ps: start-filedownload "http://c758482.r82.cf2.rackcdn.com/Sublime Text Buidl 3062 x64.zip"
   - ps: get-childitem
