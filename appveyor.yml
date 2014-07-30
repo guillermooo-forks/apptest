@@ -1,2 +1,5 @@
-before_build:
-  - ps: write-host "hello from powershell"
+install:
+  - ps: write-host "installing sublime text 3"
+  - ps: write-host "installing UnitTesting"
+
+build: false
