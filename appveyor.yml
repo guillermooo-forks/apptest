@@ -1,0 +1,2 @@
+before_build:
+  - ps: write-host "hello from powershell"
