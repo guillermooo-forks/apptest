@@ -3,3 +3,6 @@ install:
   - ps: write-host "installing UnitTesting"
 
 build: false
+
+test_script:
+  - ps: C:\projects\apptest\app.ps1
