@@ -9,7 +9,7 @@ install:
   - ps: mkdir "C:\Sublime Text\Data\Packages" -force
   - ps: git clone -q --branch=master https://github.com/dart-lang/dart-sublime-bundle.git "C:\Sublime Text\Data\Packages\Dart"
   - ps: write-host "installing UnitTesting"
-  - ps: "& 'C:\Sublime Text\sublime_text.exe'"
+  - ps: start-process "C:\Sublime Text\sublime_text.exe"
   - ps: get-process sublime_text.exe
 
 build: false
