@@ -1,9 +1,10 @@
 install:
+  - ps: "installing 7zip"
   - cinst "7zip"
-  - ps: get-command "7z.*"
   - ps: write-host "installing sublime text 3"
-  - ps: start-filedownload "http://c758482.r82.cf2.rackcdn.com/Sublime Text Buidl 3062 x64.zip"
-  - ps: get-childitem
+  - ps: start-filedownload "http://c758482.r82.cf2.rackcdn.com/Sublime Text Build 3062 x64.zip"
+  - ps: & "7z.exe" x "Sublime Text Build 3062 x64.zip" -o"C:\Sublime Text"
+  - ps: gci C:\Sublime Text
   - ps: write-host "installing UnitTesting"
 
 build: false
