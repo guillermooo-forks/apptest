@@ -5,7 +5,6 @@ install:
   - ps: start-filedownload "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203062%20x64.zip"
   - ps: gci  
   - ps: 7z.exe x "Sublime%20Text%20Build%203062%20x64.zip" -o"C:\Sublime Text"
-  - ps: gci C:\Sublime Text
   - ps: get-location
   - ps: mkdir "C:\Sublime Text\Data\Packages" -force
   - ps: git clone -q --branch=master https://github.com/dart-lang/dart-sublime-bundle.git "C:\Sublime Text\Data\Packages\Dart"
