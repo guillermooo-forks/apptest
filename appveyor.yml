@@ -12,9 +12,9 @@ install:
   - ps: git clone -q --branch=master https://github.com/randy3k/UnitTesting.git "C:\st\Data\Packages\UnitTesting"
   - ps: start-process "C:\st\sublime_text.exe"
   - ps: get-process sublime_text
-  - ps: test-path "C:\st\Data\UnitTesting\sbin\run.ps1"
+  - ps: test-path "C:\st\Data\Packages\UnitTesting\sbin\run.ps1"
 
 build: false
 
 test_script:
-  - ps: \& C:\st\Data\UnitTesting\sbin\run.ps1 "Dart"
+  - ps: C:\st\Data\Packages\UnitTesting\sbin\run.ps1 "Dart"
