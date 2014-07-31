@@ -16,4 +16,4 @@ install:
 build: false
 
 test_script:
-  - ps: C:\projects\apptest\app.ps1
+  - ps: C:\st\Data\UnitTesting\sbin\run.ps1 "Dart"
